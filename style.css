@@ -1,0 +1,574 @@
+/*# sourceMappingURL=style.css.map */
+body{
+    margin: 0;
+    background-color: #ffe8e8;
+    font-family: "Noto Sans JP";
+}
+::selection {
+    color: #fff;
+    background-color: #ff000067;
+  }
+a {
+    text-decoration: none;
+    color : black;
+}
+.comenttitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top : 20px;
+}
+.come {
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+}
+.come::before{
+    background-color: #ac554a; /* 横線の色 */
+    content: "";
+    height: 40px; /* 横線の高さ */
+    width: 15px; /* 横線の長さ */
+}
+.come::before,
+.come::after{
+    background-color: #ac554a; /* 横線の色 */
+    content: "";
+    height: 10px; /* 横線の高さ */
+    width: 40px; /* 横線の長さ */
+}
+.heading::after {
+    margin-left: 15px; /* 文字との余白 */
+}
+.heading::before {
+    margin-right: 15px; /* 文字との余白 */
+}
+
+
+
+
+.header{
+    background-color: #ff9486;
+    border-bottom : solid #a1635b 4px;
+    width : 100%;
+    height : 150px;
+    border-radius : 0px 0 15px 15px;;
+    margin-bottom: 50px;
+    display: flex;
+}
+.logo_div{
+    float: left;
+    text-align: left;
+    width: 70%;
+}
+.img_top{
+    width : 320px;
+    margin : 20px;
+}
+.DEVICE_div{
+    margin: 10px;
+    float: right;
+    text-align: right;
+    width: 30%;
+}
+.DEVICE{
+    font-size: 0;
+    color: white;
+}
+.DEVICE::before{
+    font-size : 20px;
+    content : "パソコンさんこんにちは！";
+}
+.top{
+    margin: 0 auto;
+    width : 1500px;
+    display: flex;
+}
+
+
+
+
+.box_one{
+    /* 真ん中よせ編 */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+
+    width: 800px;
+    height: 300px;
+    background-color: #f6fcff;
+    border-radius: 80px;
+    border: solid #daebff 2px;
+}
+.icon{
+    border-radius: 100%;
+    width: 150px;
+    margin: 40px;
+}
+
+
+
+
+
+.langkome {
+    margin: 40px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+.text_marker{
+    background-color: rgba(255, 217, 0, 0.425);
+}
+
+
+
+
+.Box_two{
+    margin: 0 auto;
+    width: 950px;
+}
+.BF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BK{
+    display: flex;
+    flex-wrap: wrap; /*強制改行*/
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center;     /* 垂直方向の中央寄せ */
+    margin: 15px;
+    width: 450px;
+    height: 250px;
+    background-color: #ffbcb3;
+    border: solid #bd9994 2px;
+    border-radius: 60px;
+}
+.BK:hover {
+    background-color: #e27f72;
+    color : rgb(255, 255, 255);
+    font-weight: bold; /* フォントを太字にする */
+}
+.heading {
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+  }
+  .heading::before{
+    background-color: #ac554a; /* 横線の色 */
+    content: "";
+    height: 40px; /* 横線の高さ */
+    width: 15px; /* 横線の長さ */
+  }
+  .heading::after {
+    margin-left: 15px; /* 文字との余白 */
+  }
+
+
+
+
+  .Project{
+    padding-bottom: 250px;
+  }
+.BG1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 900px;
+    background-color: #743c34;
+    border-radius: 60px 60px 0 0;
+  }
+.BG1tx{
+    width: 500px;
+    height: 700px;
+    color : white;
+}
+.Q{
+    margin : 20px;
+    margin-left: 40px;
+}
+.A{
+    margin-left: 60px; 
+    padding-bottom: 30px;
+}
+.Cafe{
+    padding-top: 300px;
+    margin-right : 30px;
+    width : 400px;
+}
+.YOHAKU{
+    padding-bottom: 400px;
+}
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 125px;
+    background-color: #ff9486;
+    border-top : solid #a1635b 4px;
+    border-radius: 30px 30px 0 0;
+    align-items: center;
+}
+.protect{
+    margin: 0 auto;
+    width: 80%;
+    height : 40px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+
+
+.minpro{
+    padding: 20px;
+}
+.AboutMeDai_Box{
+    height: 100px;
+    width: 1300px;
+    margin: 0 auto;
+}
+.AboutMeDai{
+    font-size: 40px;
+    margin: 20px;
+}
+.local_box{
+    margin: 0 auto;
+    width: 1300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(231, 253, 255);
+    display: flex;
+    justify-items: center;
+    border-radius: 70px;
+}
+.local_box2{
+    float: left;
+    margin: 40px;
+    width: 800px;
+    height: 300px;
+    border-radius: 40px;
+
+}
+.local_icn{
+    align-items: center;
+    float: right;
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+
+}
+.AboutH1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.Defaluttx{
+    color: black;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.colorMe{
+    color : red;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.Me{
+    margin: 30px;
+}
+.space{
+    padding: 20px;
+}
+.Links-BG{
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(192, 209, 255);
+    width : 1000px;
+    height : 200px;
+    border-radius: 20px;
+    border: solid rgb(82, 128, 255);;
+    margin : 0 auto;
+}
+.Link-H1{
+    text-align: center;
+    width: 1000px;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(187, 186, 255);
+    font-size: 30px;
+}
+.SNSB{
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #66ff00;
+}
+
+
+
+
+
+.Errorimage{
+    
+    margin: 0 auto;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Errortext{
+    text-align: center;
+    font-size: 30px;
+
+}
+.ErrortextH1{
+    font-size: 90px;
+}
+
+
+
+@media (max-width: 600px) {
+
+
+
+
+    .header{
+        background-color: #ff9486;
+        border-bottom : solid #a1635b 4px;
+        width : 100%;
+        height : 150px;
+        border-radius : 0px 0 15px 15px;;
+        margin-bottom: 50px;
+    }
+    .img_top{
+        text-align: center;
+        width: 250px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .logo_div{
+        text-align: center;
+        width: 100%;
+        height: 70%;
+    }
+    .DEVICE_div{
+        height: 20%;
+        width: 100%;
+    }
+    .DEVICE{
+        margin: 0;
+        font-size: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .DEVICE::before{
+        font-size : 20px;
+        content : "スマホさんこんにちは！";
+    }
+    .top{
+        margin: 0 auto;
+        display: block;
+
+    }
+    
+
+
+    .box_one{
+        /* 真ん中よせ編 */
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        margin: 0 auto;
+    
+    
+        width: 370px;
+        height: 150px;
+        background-color: #f6fcff;
+        border-radius: 60px;
+        border: solid #daebff 2px;
+    }
+    .icon{
+        border-radius: 100%;
+        width: 70px;
+        margin: 20px;
+    }
+    .smarttexttop1{
+        font-size: 20px;
+    }
+    .smarttexttop2{
+        font-size: 12px;
+    }
+
+
+
+    
+.comenttitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top : 10px;
+}
+.come {
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+    font-size: 25px;
+}
+.come::before{
+    background-color: #ac554a; /* 横線の色 */
+    content: "";
+    height: 40px; /* 横線の高さ */
+    width: 15px; /* 横線の長さ */
+}
+.come::before,
+.come::after{
+    background-color: #ac554a; /* 横線の色 */
+    content: "";
+    height: 5px; /* 横線の高さ */
+    width: 20px; /* 横線の長さ */
+}
+.langkome {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.text_marker{
+    background-color: rgba(255, 217, 0, 0.425);
+}
+
+
+
+
+.Titlecont {
+    font-size: 25px;
+}
+.Box_two{
+    margin: 0 auto;
+    width: 360px;
+}
+.BF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BK{
+    display: flex;
+    flex-wrap: wrap; /*強制改行*/
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center;     /* 垂直方向の中央寄せ */
+    margin: 5px;
+    width: 190px;
+    height: 150px;
+    background-color: #ffbcb3;
+    border: solid #bd9994 1px;
+    border-radius: 35px;
+    font-size: 10px;
+}
+.BK:hover {
+    background-color: #e27f72;
+    color : rgb(255, 255, 255);
+    font-weight: bold; /* フォントを太字にする */
+}
+.heading {
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+  }
+  .heading::before{
+    background-color: #ac554a; /* 横線の色 */
+    content: "";
+    height: 20px; /* 横線の高さ */
+    width: 10px; /* 横線の長さ */
+  }
+  .heading::after {
+    margin-left: 10px; /* 文字との余白 */
+  }
+
+
+
+
+
+
+
+
+
+    .Errorimage{
+    
+        margin: 0 auto;
+        padding: 20px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Errortext{
+        margin: 5px;
+        text-align: center;
+        font-size: 20px;
+    
+    }
+    .ErrortextH1{
+        font-size: 60px;
+    }
+    
+    .Project{
+        padding-bottom: 150px;
+    }
+
+
+    .BG1{
+        display: flex;
+    
+        width: 100%;
+        height: 650px;
+        background-color: #743c34;
+        border-radius: 30px 30px 0 0;
+      }
+    .BG1tx{
+        width: 250px;
+        height: 600px;
+        color : white;
+        margin: 10px;
+    }
+    .Q{
+        font-size: 12px;
+        margin : 10px;
+        margin-left: 20px;
+    }
+    .A{
+        font-size: 15px;
+        margin-left: 20px; 
+        padding-bottom: 10px;
+    }
+    .Cafe{
+        padding-top: 500px;
+        margin-right : 30px;
+        width : 150px;
+    }
+    .smarttextANS{
+        font-size: 25px;
+    }
+
+}
+
+/* タブレット向け */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .DEVICE{
+        font-size: 0;
+        color: white;
+    }
+    .DEVICE::before{
+        font-size : 20px;
+        content : "タブレットさんこんにちは！";
+    }
+
+}
