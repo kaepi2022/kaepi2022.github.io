@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1996年風の日本のウェブサイト</title>
+    <style>
+        @font-face {
+            font-family: 'DotMatrix';
+            src: url('https://example.com/fonts/dot-matrix.ttf') format('truetype'); /* ドット風フォントのURLに変更 */
+        }
+
+        body {
+            font-family: 'DotMatrix', monospace;
+            background-color: #00FFFF;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/tile-pattern.gif'); /* タイル背景画像のURLに変更 */
+            background-repeat: repeat;
+        }
+
+        header {
+            background: linear-gradient(to right, #FF00FF, #FFFF00);
+            color: #0000FF;
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            border-bottom: 5px solid #0000FF;
+            position: relative;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background: linear-gradient(to right, #0000FF, #00FFFF);
+            color: #FFFF00;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            border: 2px solid #FFFF00;
+            padding: 5px 10px;
+            background: #0000FF;
+            border-radius: 5px;
+        }
+
+        nav ul li a {
+            color: #FFFF00;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            background: #FFFF00;
+            color: #0000FF;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 20px;
+            background: #FFFFFF;
+            border: 3px solid #FF00FF;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 2px solid #FF00FF;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to bottom right, #FFFF00, #FF00FF);
+        }
+
+        .section h2 {
+            background: linear-gradient(to right, #FF00FF, #FFFF00);
+            color: #0000FF;
+            padding: 10px;
+            border: 2px solid #0000FF;
+            font-size: 28px;
+            text-align: center;
+            box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .section p {
+            line-height: 1.8;
+            margin: 10px;
+        }
+
+        .section img {
+            max-width: 100%;
+            border: 3px solid #FF00FF;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            margin: 10px 0;
+        }
+
+        footer {
+            background: linear-gradient(to right, #0000FF, #00FFFF);
+            color: #FFFF00;
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            border-top: 5px solid #FF00FF;
+            position: relative;
+            box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .marquee {
+            background: linear-gradient(to right, #FF00FF, #FFFF00);
+            color: #0000FF;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation: marquee 15s linear infinite;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="marquee">ようこそ！1996年風のウェブサイトへ！</div>
+        1996年風の日本のウェブサイト
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#history">歴史</a></li>
+            <li><a href="#games">ゲーム</a></li>
+            <li><a href="#contact">コンタクト</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>ホーム</h2>
+            <p>1996年風のサイトへようこそ！このサイトは、1996年のウェブデザインの特徴を再現し、当時の雰囲気を楽しむことができます。</p>
+            <img src="https://www.example.com/home-image.gif" alt="ホームの画像"> <!-- ホーム画像URLに変更 -->
+        </section>
+
+        <section id="history" class="section">
+            <h2>歴史</h2>
+            <p>日本の歴史に関する情報をここにまとめています。古代から現代まで、日本の歴史を楽しく学べるコンテンツを提供します。</p>
+            <img src="https://www.example.com/history-image.gif" alt="歴史の画像"> <!-- 歴史画像URLに変更 -->
+        </section>
+
+        <section id="games" class="section">
+            <h2>ゲーム</h2>
+            <p>ここでは、1996年の人気ゲームやNintendoのゲームに関する情報を紹介します。ゲームの歴史を振り返りましょう。</p>
+            <img src="https://www.example.com/games-image.gif" alt="ゲームの画像"> <!-- ゲーム画像URLに変更 -->
+        </section>
+
+        <section id="contact" class="section">
+            <h2>コンタクト</h2>
+            <p>お問い合わせは、<a href="mailto:example@example.com">example@example.com</a>までお願いします。</p>
+        </section>
+    </div>
+    <footer>
+        © 2024 1996年風のウェブサイト - すべての権利を保留します。
+    </footer>
+</body>
+</html>
