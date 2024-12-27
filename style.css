@@ -2,15 +2,20 @@
 body{
     margin: 0;
     background-color: #ffe8e8;
-    font-family: "Noto Sans JP";
+    font-family: "M PLUS 1p";
+    cursor: url('/src/P_defalut.png') 6 6, auto;
 }
 ::selection {
     color: #fff;
     background-color: #ff000067;
   }
+.can_img{
+    cursor: url(/src/P_img.png), default;
+}
 a {
     text-decoration: none;
     color : black;
+    cursor: url('/src/P_defalut.png') 6 6, auto;
 }
 .comenttitle{
     display: flex;
@@ -87,8 +92,7 @@ a {
 
 
 .box_one{
-    /* 真ん中よせ編 */
-    
+    border-radius: 50px 50px 50px 50px / 100px 100px 100px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,11 +100,14 @@ a {
     margin: 0 auto;
 
 
-    width: 800px;
-    height: 300px;
+    width: 700px;
+    height: 370px;
     background-color: #f6fcff;
-    border-radius: 80px;
-    border: solid #daebff 2px;
+    border: solid #949494 3px;
+    
+}
+.box_one:hover{
+    border: solid #4ec2e8 8px;
 }
 .icon{
     border-radius: 100%;
@@ -134,23 +141,46 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+
+
 .BK{
+    font-family: "BIZ UDPGothic";
     display: flex;
     flex-wrap: wrap; /*強制改行*/
     justify-content: center; /* 水平方向の中央寄せ */
     align-items: center;     /* 垂直方向の中央寄せ */
     margin: 15px;
     width: 450px;
-    height: 250px;
-    background-color: #ffbcb3;
-    border: solid #bd9994 2px;
-    border-radius: 60px;
+    height: 150px;
+    background-color:  #ffffff;
+    border: solid #4ec2e8 5px;
+    border-radius: 80px;
 }
 .BK:hover {
-    background-color: #e27f72;
-    color : rgb(255, 255, 255);
-    font-weight: bold; /* フォントを太字にする */
+    background-color: #efefef;
+    width: 470px;
+    height: 155px;
+    border: solid #4ec2e8 7px;
+    border-radius: 100px;
 }
+.coming-soon{
+    font-family: "BIZ UDPGothic";
+    display: flex;
+    flex-wrap: wrap; /*強制改行*/
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center;     /* 垂直方向の中央寄せ */
+    margin: 15px;
+    width: 450px;
+    height: 150px;
+
+    background-image: url(/src/Coming-Soon.gif);
+    border: solid #525252 5px;
+    border-radius: 80px;
+}
+
+
+
 .heading {
     align-items: center; /* 横線を上下中央 */
     display: flex; /* 文字と横線を横並び */
@@ -169,7 +199,7 @@ a {
 
 
   .Project{
-    padding-bottom: 250px;
+    padding-bottom: 50px;
   }
 .BG1{
     display: flex;
@@ -206,7 +236,13 @@ a {
 
 
 
-
+.footer_main{
+    width: 100%;
+    height: 125px;
+    background-color: #ff9486;
+    border-top : solid #a1635b 4px;
+    align-items: center;
+}
 .footer {
     width: 100%;
     height: 125px;
@@ -222,6 +258,72 @@ a {
     text-align: right;
     margin-top: 30px;
 }
+
+
+/*マリオのやつ*/
+.SM-Yuka{
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    background-image: url(/src/SM/Brick-2.png);
+    margin-bottom: 120px;
+}
+.SM-Chara{
+    margin: 0;
+    width: 100px;
+}
+.image-container {
+    overflow: hidden; /* 画像が画面外に出るのを隠す */
+    width: 100%; /* 親コンテナの幅を100%に */
+    position: relative; /* アニメーションを動かすために相対位置を設定 */
+  }
+  
+  .moving-image {
+    position: absolute; /* 絶対位置で動かす */
+    top: 0;
+    left: 0;
+    width: 100px; /* 画像の幅 */
+    height: auto; /* 高さは画像の比率に合わせて */
+    animation: move-right 5s infinite linear; /* アニメーションを2秒でループ */
+  }
+  
+  @keyframes move-right {
+    0% {
+      transform: translateX(-100px); /* 最初は画像の左端が画面外 */
+      opacity: 1; /* 画像を表示 */
+      visibility: visible; /* 画像を見える状態に */
+    }
+    99% {
+      transform: translateX(100vw); /* 画面外の右側に移動 (100vwは画面幅) */
+      opacity: 1; /* 画像を表示 */
+      visibility: visible; /* 画像を見える状態に */
+    }
+    100% {
+      transform: translateX(-100px); /* 画面外の左側に戻る */
+      opacity: 0; /* 画像を非表示に */
+      visibility: hidden; /* 画像を見えない状態に */
+    }
+  }
+  
+
+.SNS-App{
+    border-radius: 20px;
+    margin: 30px;
+    width: 150px;
+}
+.SNS-App:hover{
+    border: #66ff00 10px solid;
+}
+.SNS-box{
+    padding-bottom: 250px;
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
 
 
 
@@ -241,11 +343,8 @@ a {
     margin: 0 auto;
     width: 1300px;
     height: 400px;
-    background-color: rgb(255, 255, 255);
-    border: solid rgb(231, 253, 255);
     display: flex;
     justify-items: center;
-    border-radius: 70px;
 }
 .local_box2{
     float: left;
@@ -281,6 +380,25 @@ a {
 .Me{
     margin: 30px;
 }
+
+
+.local_box_more{
+    margin: 0 auto;
+    width: 1300px;
+    height: 400px;
+    display: flex;
+    justify-items: center;
+    background-color: #fcfcfc;
+    border: solid 10px #4ec2e8;
+    border-radius: 10px;
+}
+.text_more{
+    margin: 20px;
+}
+
+
+
+
 .space{
     padding: 20px;
 }
@@ -325,12 +443,27 @@ a {
 .Errortext{
     text-align: center;
     font-size: 30px;
+    margin-bottom: 150px;
 
 }
 .ErrortextH1{
     font-size: 90px;
 }
+.wait{
+    display: flex;
+    justify-content: center;
+}
+.waitimage{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.waittext{
+    font-size: 30px;
+    margin-bottom: 150px;
 
+}
 
 
 @media (max-width: 600px) {
@@ -381,8 +514,7 @@ a {
 
 
     .box_one{
-        /* 真ん中よせ編 */
-        
+        border-radius: 30px 30px 30px 30px / 80px 80px 80px 80px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -391,10 +523,13 @@ a {
     
     
         width: 370px;
-        height: 150px;
+        height: 200px;
         background-color: #f6fcff;
-        border-radius: 60px;
-        border: solid #daebff 2px;
+        border: solid #4ec2e8 5px;
+        
+    }
+    .box_one:hover{
+        border: solid #4ec2e8 5px;
     }
     .icon{
         border-radius: 100%;
@@ -408,6 +543,68 @@ a {
         font-size: 12px;
     }
 
+    /*マリオのやつ*/
+    .SM-Yuka{
+        margin: 0;
+        width: 100%;
+        height: 70px;
+        background-image: url(/src/SM/Brick-2.png);
+        margin-bottom: 120px;
+    }
+    .SM-Chara{
+        margin: 0;
+        width: 100px;
+    }
+    .image-container {
+        overflow: hidden; /* 画像が画面外に出るのを隠す */
+        width: 100%; /* 親コンテナの幅を100%に */
+        position: relative; /* アニメーションを動かすために相対位置を設定 */
+    }
+    
+    .moving-image {
+        position: absolute; /* 絶対位置で動かす */
+        top: 0;
+        left: 0;
+        width: 100px; /* 画像の幅 */
+        height: auto; /* 高さは画像の比率に合わせて */
+        animation: move-right 2s infinite linear; /* アニメーションを2秒でループ */
+    }
+    
+    @keyframes move-right {
+        0% {
+        transform: translateX(-100px); /* 最初は画像の左端が画面外 */
+        opacity: 1; /* 画像を表示 */
+        visibility: visible; /* 画像を見える状態に */
+        }
+        99% {
+        transform: translateX(100vw); /* 画面外の右側に移動 (100vwは画面幅) */
+        opacity: 1; /* 画像を表示 */
+        visibility: visible; /* 画像を見える状態に */
+        }
+        100% {
+        transform: translateX(-100px); /* 画面外の左側に戻る */
+        opacity: 0; /* 画像を非表示に */
+        visibility: hidden; /* 画像を見えない状態に */
+        }
+    }
+    
+
+    .SNS-App{
+        border-radius: 20px;
+        margin: 5px;
+        width: 85px;
+    }
+    .SNS-App:hover{
+        border: red 0px solid;
+    }
+    .SNS-box{
+        padding-bottom: 125px;
+        width: 400px;
+        margin: 5px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
     
@@ -415,30 +612,29 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top : 10px;
+    padding-top : 20px;
 }
 .come {
     align-items: center; /* 横線を上下中央 */
     display: flex; /* 文字と横線を横並び */
-    font-size: 25px;
+    font-size: 30px;
 }
 .come::before{
     background-color: #ac554a; /* 横線の色 */
     content: "";
-    height: 40px; /* 横線の高さ */
-    width: 15px; /* 横線の長さ */
-}
+    height: 50px; /* 横線の高さ */
+    width: 25px; /* 5
 .come::before,
 .come::after{
     background-color: #ac554a; /* 横線の色 */
     content: "";
-    height: 5px; /* 横線の高さ */
-    width: 20px; /* 横線の長さ */
+    height: 10px; /* 横線の高さ */
+    width: 40px; /* 横線の長さ */
 }
 .langkome {
     margin: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 25px;
 }
 .text_marker{
@@ -447,37 +643,56 @@ a {
 
 
 
+.BF{
+
+    display: flex;
+}
 
 .Titlecont {
-    font-size: 25px;
+    font-size: 23px;
 }
 .Box_two{
     margin: 0 auto;
     width: 360px;
 }
-.BF{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .BK{
+    font-size: 5px;
+    font-family: "BIZ UDPGothic";
     display: flex;
     flex-wrap: wrap; /*強制改行*/
     justify-content: center; /* 水平方向の中央寄せ */
     align-items: center;     /* 垂直方向の中央寄せ */
     margin: 5px;
-    width: 190px;
-    height: 150px;
-    background-color: #ffbcb3;
-    border: solid #bd9994 1px;
+    width: 170px;
+    height: 50px;
+    background-color:  #ffffff;
+    border: solid #4ec2e8 3px;
     border-radius: 35px;
-    font-size: 10px;
 }
 .BK:hover {
-    background-color: #e27f72;
-    color : rgb(255, 255, 255);
-    font-weight: bold; /* フォントを太字にする */
+    border: solid #4ec2e8 3px;
+    width: 170px;
+    height: 50px;
 }
+.coming-soon{
+    font-size: 5px;
+    font-family: "BIZ UDPGothic";
+    display: flex;
+    flex-wrap: wrap; /*強制改行*/
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center;     /* 垂直方向の中央寄せ */
+    margin: 5px;
+    width: 170px;
+    height: 50px;
+
+    background-image: url(/src/Coming-Soon.gif);
+    border: solid #525252 3px;
+    border-radius: 35px;
+}
+
+
+
+
 .heading {
     align-items: center; /* 横線を上下中央 */
     display: flex; /* 文字と横線を横並び */
@@ -485,8 +700,8 @@ a {
   .heading::before{
     background-color: #ac554a; /* 横線の色 */
     content: "";
-    height: 20px; /* 横線の高さ */
-    width: 10px; /* 横線の長さ */
+    height: 30px; /* 横線の高さ */
+    width: 20px; /* 横線の長さ */
   }
   .heading::after {
     margin-left: 10px; /* 文字との余白 */
@@ -518,25 +733,45 @@ a {
     .ErrortextH1{
         font-size: 60px;
     }
+    .wait{
+        display: flex;
+        justify-content: center;
+    }
+    .waitimage{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .waittext{
+        font-size: 10px;
+        margin-bottom: 150px;
+    }
+    .waitmintext{
+        visibility:hidden
+    }
+    
     
     .Project{
-        padding-bottom: 150px;
+        padding-bottom: 75px;
     }
 
 
     .BG1{
-        display: flex;
-    
+
+        
         width: 100%;
         height: 650px;
         background-color: #743c34;
         border-radius: 30px 30px 0 0;
       }
     .BG1tx{
+
         width: 250px;
         height: 600px;
         color : white;
-        margin: 10px;
+        margin: 10px auto; 
     }
     .Q{
         font-size: 12px;
@@ -549,8 +784,8 @@ a {
         padding-bottom: 10px;
     }
     .Cafe{
-        padding-top: 500px;
-        margin-right : 30px;
+        margin: 0 auto;
+        padding-top: 0px;
         width : 150px;
     }
     .smarttextANS{
