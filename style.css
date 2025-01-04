@@ -1,5 +1,27 @@
 /*# sourceMappingURL=style.css.map */
+/* スクロールバー全体のスタイル */
+::-webkit-scrollbar {
+    width: 12px; /* 横スクロールバーの高さ */
+    height: 12px; /* 縦スクロールバーの幅 */
+  }
+  
+  /* スクロールバーのトラック部分（背景） */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* スクロールバーのつまみ部分 */
+  ::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    border: solid 10px #4ec2e8;
+    border-radius: 10px;
+    cursor: url(/src/P_img.png), default;
+  }
+ ::-webkit-scrollbar-thumb:hover{
+    cursor: url(/src/P_img.png), default;
+}
 body{
+
     margin: 0;
     background-color: #ffe8e8;
     font-family: "M PLUS 1p";
